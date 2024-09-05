@@ -11,6 +11,7 @@ import Overview from './pages/Overview';
 import Stats from './pages/Stats';
 import Users from './pages/Users';
 import UserDetails from './pages/UserDetails';
+import Product from './pages/Product';
 
 function App() {
   const [isLoggedIn, setisLoggedIn] = useState(false);
@@ -34,6 +35,9 @@ function App() {
               <Link to="/contact">
                 <li>Contact</li>
               </Link>
+              <Link to="/product">
+                <li>Product</li>
+              </Link>
               {isLoggedIn && (
                 <>
                   <Link to="/dashboard">
@@ -55,6 +59,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/product" element={<Product />} />
           <Route path="*" element={<PageNotFound />} />
           <Route
             path="/dashboard/*"
