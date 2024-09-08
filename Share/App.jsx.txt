@@ -129,7 +129,7 @@ import Stats from "./pages/Stats";
 import Users from "./pages/Users";
 import UserDetails from "./pages/UserDetails";
 import Product from "./pages/Product";
-import AddProduct from "./pages/addproduct";
+import AddProduct from "./pages/AddProduct";
 import Layout from "./pages/Layout"; // Optional, to wrap navigation
 
 function App() {
